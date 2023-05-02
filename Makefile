@@ -8,6 +8,6 @@ setup:
 
 build:
 	mkdir -m 777 -p "Bin"
-	cd Bin && ../gcc/configure --target=x86_64-kot --prefix="$(shell pwd)/Bin" --disable-nls --enable-languages=c,c++ --without-headers && make
+	cd Bin && ../gcc/configure --target=x86_64-kot --prefix="$(shell pwd)/Bin" --disable-nls --enable-languages=c,c++ --without-headers && make all-gcc
 
 github-action: all

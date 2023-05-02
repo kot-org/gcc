@@ -23,4 +23,4 @@ jobs:
           prerelease: false
           title: "Kot-gcc 1.0"
           files: |
-            Bin/gcc
+            Bin/x86_64-kot-gcc
