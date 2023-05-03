@@ -14,6 +14,6 @@ setup:
 build:
 	mkdir -m 777 -p "Bin"
 	sudo mkdir -m 777 -p "/usr/kot"
-	cd Bin && ../gcc/configure --target=x86_64-kot --prefix="$(shell pwd)/Bin" --disable-nls --enable-languages=c,c++  --with-newlib --with-sysroot="/usr/kot" && make all-gcc
+	cd Bin && ../gcc/configure --target=x86_64-kot --prefix="$(shell pwd)/Bin" --disable-nls --enable-languages=c,c++  --with-newlib --with-sysroot="/usr/kot" && make -j all-gcc && make -j install-gcc 
 
 github-action: all
