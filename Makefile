@@ -7,7 +7,7 @@ gitclone:
 	git clone https://gcc.gnu.org/git/gcc.git
 
 setup:
-	cd gcc && ./contrib/download_prerequisites && git checkout releases/gcc-12.2.0 && git apply ../gcc-kot.diff.diff
+	cd gcc && ./contrib/download_prerequisites && git checkout releases/gcc-12.2.0 && git apply ../gcc-kot.diff
 	cd gcc/libstdc++-v3 && autoconf2.69
 	cp kot.h gcc/gcc/config/kot.h
 
